@@ -9,11 +9,11 @@
 #define GPFSEL4           0x20200010UL
 #define GPFSEL5           0x20200014UL
 
-#define GPFSET0           0x2020001CUL
-#define GPFSET1           0x20200020UL
+#define GPSET0           0x2020001CUL
+#define GPSET1           0x20200020UL
 
-#define GPFCLR0           0x20200028UL
-#define GPFCLR1           0x2020002CUL
+#define GPCLR0           0x20200028UL
+#define GPCLR1           0x2020002CUL
 
 uint32_t gpio_set_function(uint32_t pin, uint32_t function);
 uint32_t gpio_pin_enable(uint32_t pin);

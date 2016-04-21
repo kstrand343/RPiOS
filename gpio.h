@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 #define GPIO_BASE         0x20200000UL
 
 #define GPFSEL0           GPIO_BASE
@@ -12,3 +14,7 @@
 
 #define GPFCLR0           0x20200028UL
 #define GPFCLR1           0x2020002CUL
+
+uint32_t gpio_set_function(uint32_t pin, uint32_t function);
+uint32_t gpio_pin_enable(uint32_t pin);
+uint32_t gpio_pin_disable(uint32_t pin);

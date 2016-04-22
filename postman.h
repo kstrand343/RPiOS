@@ -8,5 +8,7 @@
 #define MAILBOX_CONFIG      0x2000b89C
 #define MAILBOX_WRITE       0x2000b8a0
 
+#define NUM_CHANNELS        7
+
 uint32_t mailbox_read(uint32_t channel);
 uint32_t mailbox_write(uint32_t channel, uint32_t message);
